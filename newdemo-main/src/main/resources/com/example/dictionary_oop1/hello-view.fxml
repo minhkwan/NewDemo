@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.38294314381270905" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dictionary_oop1.Controller">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+            <children>
+                <SplitPane dividerPositions="0.2196969696969697" layoutX="22.0" layoutY="55.0" orientation="VERTICAL" prefHeight="398.0" prefWidth="226.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="231.0" prefWidth="158.0" style="-fx-background-color: #000080;">
+                            <children>
+                                <Text fill="WHITE" layoutX="58.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="        Dictionary" wrappingWidth="107.630859375" />
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="10.0" layoutY="10.0" minHeight="0.0" minWidth="0.0" prefHeight="231.0" prefWidth="158.0">
+                            <children>
+                                <TextField fx:id="textField" layoutX="6.0" layoutY="2.0" prefHeight="25.0" prefWidth="205.0" style="-fx-border-style: red;" />
+                                <Button layoutX="93.0" layoutY="39.0" mnemonicParsing="false" onAction="#buttonSearch" text="Search" />
+                                <ListView fx:id="listView" layoutX="9.0" layoutY="115.0" onMouseClicked="#handleItemClicks" prefHeight="191.0" prefWidth="224.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="115.0" />
+                            </children>
+                        </AnchorPane>
+                    </items>
+                </SplitPane>
+            </children></AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+            <children>
+                <SplitPane dividerPositions="0.2196969696969697" orientation="VERTICAL" prefHeight="398.0" prefWidth="366.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #000099;" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" onMouseClicked="#handleItemClicks" prefHeight="100.0" prefWidth="160.0">
+                            <children>
+                                <Label fx:id="welcomeText" layoutX="148.0" layoutY="58.0" text="Label" />
+                            </children></AnchorPane>
+                    </items>
+                </SplitPane>
+            </children></AnchorPane>
+    </items>
+</SplitPane>
